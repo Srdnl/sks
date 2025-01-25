@@ -37,6 +37,7 @@ body{
 
 .search-bar{
      display: flex;
+     align-items: center;
      width: 580px;
      height: 50px;
      background-color: #417C9E;
@@ -68,6 +69,55 @@ body {
   background-color: #000;
   overflow: hidden;
   margin: 0;
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  background-color: #1B2838;
+  height: 35px;
+  width: 188px;
+  
+}
+
+#searchtext{
+  color: #3f5a99;
+  background: none;
+  border: none;
+  height: 35px;
+  width: 188px;
+  font-style: italic;
+  font-size: 14;
+  padding-left: 10px;
+  font-family: 'Inria Sans';
+}
+
+#searchtext::placeholder{
+  color: #3f5a99;
+  background: none;
+  border: none;
+  font-style: italic;
+  font-size: 14;
+  font-family: 'Inria Sans';
+}
+
+#searchtext:focus{
+  outline: none;
+}
+
+.searchbtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5CB0E1;
+  width: 42px;
+  height: 35px;
+}
+
+.searchimg{
+  width: 22px;
+  height: 22px;
 }
 
 .snow {
