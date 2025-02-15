@@ -1,11 +1,14 @@
 let snowanim = document.querySelector(".snowactive")
-let btnforanim = document.querySelector(".site-title")
+let btnforanim = document.querySelector(".textgamediv")
 let btnsearch = document.querySelector(".searchbtn, .searchimg")
 let input = document.getElementById('searchtext')
 let gameimg = document.querySelectorAll('.gameimg')
 let gametitle = document.querySelectorAll('.gametitle')
 let pricesteam = document.querySelectorAll('.pricesteam')
 let price = document.querySelectorAll('.price')
+
+let aboutusnav = document.querySelector('.about-usnav')
+let sitetitle = document.querySelector('.site-title')
 
 
 let searchinput = ["poe", "path of exile", "Path of exile"] 
@@ -36,8 +39,20 @@ function getsearch() {
      }
 }
 
+function sitehref() {
+     window.location.href = 'main.html';
+}
+
+function abouthref() {
+     window.location.href = 'aboutpage.html';
+}
+
 btnforanim.addEventListener("click", onanim)
 btnsearch.addEventListener("click", getsearch)
+sitetitle.addEventListener("click", sitehref)
+aboutusnav.addEventListener("click", abouthref)
+
+
 
 let games = [
      { title: 'Path of Exile 2', img: 'pic-content/poe2.jpg', pc: '29.99$', price: '34.99$' },

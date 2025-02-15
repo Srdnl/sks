@@ -338,3 +338,26 @@ footer{
   font-family: 'Inria Sans';
   text-align: center;
 }
+
+.maintext{
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: 'Inria Sans';
+  background-color: #171A21;
+  height: 420px;
+  width: 1100px;
+  padding: 15px 15px 15px 15px;
+}
+
+
+
+.community{
+  color: #3f5a99;
+}
+
+.aboutseo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85%;
+}
