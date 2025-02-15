@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Музичні Платівки</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <style>
+    .album-card {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+
+    .album-card:hover {
+      transform: scale(1.05);
+    }
+
+    .album-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .album-card .card-body {
+      text-align: center;
+
+    }
+
+    footer {
+      background: #343a40;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="fixed-header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Вінілові платівки</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Перемикання навігації">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto link_bar">
+            <li class="nav-item">
+              <a class="link" href="index.html">Головна</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="#catalog">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="#contact">Контакти</a>
+            </li>
+            <li class="nav-item">
+              <a class="link" href="#about">Про нас</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Платівки жанру "Альтернатива"</h1>
+    <div class="row" id="albums-container">
+      <div class="col-md-4 class_toogle">
+        <div class="flip-card-inner">
+          <div class="card album-card flip-card-front">
+            <img src="https://i.scdn.co/image/ab67616d0000b2732dc63e977bd5101072adcef6" class="card-img-top"
+              alt="Альбом 1" title="ТЕКСТ"/>
+            <div class="card-body">
+              <h5 class="card-title">System of a Down</h5>
+              <p class="card-text">System of a Down</p>
+              <p class="card-text">1600 грн</p>
+              <p class="btn btn-primary more">Детальніше</p>
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <div class="card-body">
+              <div class="tracklist-container">
+                <h2 class="album-title">System of a Down</h2>
+                <ul class="tracklist">
+                  <li class="track">
+                    <span class="track-number">1</span>
+                    <span class="track-name" title="ТУТ БУДЕ ТЕКСТ">Suite-Pee</span>
+                    <span class="track-duration">2:31</span>
+                  </li>
+                  <li class="track">
+                    <span class="track-number">2</span>
+                    <span class="track-name">Know</span>
+                    <span class="track-duration">2:56</span>
+                  </li>
+                  <li class="track">
+                    <span class="track-number">3</span>
+                    <span class="track-name">Sugar</span>
+                    <span class="track-duration">2:33</span>
+                  </li>
+                  <li class="track">
+                    <span class="track-number">4</span>
+                    <span class="track-name">Suggestions</span>
+                    <span class="track-duration">2:44</span>
+                  </li>
+                  <li class="track">
+                    <span class="track-number">5</span>
+                    <span class="track-name">Spiders</span>
+                    <span class="track-duration">3:35</span>
+                  </li>
+                  <li class="track">
+                    <span class="track-number">6</span>
+                    <span class="track-name">Ddevil</span>
+                    <span class="track-duration">1:43</span>
+                  </li>
+                  <li class="track">
+                    <span class="track-number">7</span>
+                    <span class="track-name">Soil</span>
+                    <span class="track-duration">3:25</span>
+                  </li>
+                  <li class="track">
+                    <span class="track-number">8</span>
+                    <span class="track-name">War?</span>
+                    <span class="track-duration">2:40</span>
+                  </li>
+                  <li class="track">
+                    <span class="track-number">9</span>
+                    <span class="track-name">Mind</span>
+                    <span class="track-duration">6:16</span>
+                  </li>
+                  <li class="track">
+                    <span class="track-number">10</span>
+                    <span class="track-name">Peephole</span>
+                    <span class="track-duration">4:06</span>
+                  </li>
+                  <li class="track">
+                    <span class="track-number">11</span>
+                    <span class="track-name">CUBErt</span>
+                    <span class="track-duration">1:50</span>
+                  </li>
+                  <li class="track">
+                    <span class="track-number">12</span>
+                    <span class="track-name">Darts</span>
+                    <span class="track-duration">2:42</span>
+                  </li>
+                  <li class="track">
+                    <span class="track-number">13</span>
+                    <span class="track-name">P.L.U.C.K(Politically Lying, Unholy, Cowardly Killers)</span>
+                    <span class="track-duration">3:33</span>
+                  </li>
+                </ul>
+                <p class="btn btn-primary order">Оформити замовлення</з>
+                <p class="btn btn-primary cancel">Закрити</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer style="position: fixed; bottom: 0;">
+    <p>&copy; 2025 Музичні Платівки. Всі права захищено.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const albums = [
+        {
+          title: "System of a Down",
+          artist: "System of a Down",
+          price: "1600 грн",
+          image: "https://i.scdn.co/image/ab67616d0000b2732dc63e977bd5101072adcef6",
+          tracklist: [
+            ["1", "Suite-Pee", "2:31"],
+            ["2", "Know", "2:56"],
+            ["3", "Sugar", "2:33"],
+            ["4", "Suggestions", "2:44"],
+            ["5", "Spiders", "3:35"],
+            ["6", "Ddevil", "1:43"],
+            ["7", "Soil", "3:25"],
+            ["8", "War?", "2:40"],
+            ["9", "Mind", "6:16"],
+            ["10", "Peephole", "4:06"],
+            ["11", "CUBErt", "1:50"],
+            ["12", "Darts", "2:42"],
+            ["13", "P.L.U.C.K (Politically Lying, Unholy, Cowardly Killers)", "3:33"]]
+        },
+        {
+          title: "System of a Down",
+          artist: "System of a Down",
+          price: "1600 грн",
+          image: "https://i.scdn.co/image/ab67616d0000b2732dc63e977bd5101072adcef6",
+          tracklist: [
+            ["1", "Suite-Pee", "2:31"],
+            ["2", "Know", "2:56"],
+            ["3", "Sugar", "2:33"],
+            ["4", "Suggestions", "2:44"],
+            ["5", "Spiders", "3:35"],
+            ["6", "Ddevil", "1:43"],
+            ["7", "Soil", "3:25"],
+            ["8", "War?", "2:40"],
+            ["9", "Mind", "6:16"],
+            ["10", "Peephole", "4:06"],
+            ["11", "CUBErt", "1:50"],
+            ["12", "Darts", "2:42"],
+            ["13", "P.L.U.C.K (Politically Lying, Unholy, Cowardly Killers)", "3:33"]]
+        },
+        {
+          title: "System of a Down",
+          artist: "System of a Down",
+          price: "1600 грн",
+          image: "https://i.scdn.co/image/ab67616d0000b2732dc63e977bd5101072adcef6",
+          tracklist: [
+            ["1", "Suite-Pee", "2:31"],
+            ["2", "Know", "2:56"],
+            ["3", "Sugar", "2:33"],
+            ["4", "Suggestions", "2:44"],
+            ["5", "Spiders", "3:35"],
+            ["6", "Ddevil", "1:43"],
+            ["7", "Soil", "3:25"],
+            ["8", "War?", "2:40"],
+            ["9", "Mind", "6:16"],
+            ["10", "Peephole", "4:06"],
+            ["11", "CUBErt", "1:50"],
+            ["12", "Darts", "2:42"],
+            ["13", "P.L.U.C.K (Politically Lying, Unholy, Cowardly Killers)", "3:33"]]
+        },
+        {
+          title: "System of a Down",
+          artist: "System of a Down",
+          price: "1600 грн",
+          image: "https://i.scdn.co/image/ab67616d0000b2732dc63e977bd5101072adcef6",
+          tracklist: [
+            ["1", "Suite-Pee", "2:31"],
+            ["2", "Know", "2:56"],
+            ["3", "Sugar", "2:33"],
+            ["4", "Suggestions", "2:44"],
+            ["5", "Spiders", "3:35"],
+            ["6", "Ddevil", "1:43"],
+            ["7", "Soil", "3:25"],
+            ["8", "War?", "2:40"],
+            ["9", "Mind", "6:16"],
+            ["10", "Peephole", "4:06"],
+            ["11", "CUBErt", "1:50"],
+            ["12", "Darts", "2:42"],
+            ["13", "P.L.U.C.K (Politically Lying, Unholy, Cowardly Killers)", "3:33"]]
+        },
+        {
+          title: "System of a Down",
+          artist: "System of a Down",
+          price: "1600 грн",
+          image: "https://i.scdn.co/image/ab67616d0000b2732dc63e977bd5101072adcef6",
+          tracklist: [
+            ["1", "Suite-Pee", "2:31"],
+            ["2", "Know", "2:56"],
+            ["3", "Sugar", "2:33"],
+            ["4", "Suggestions", "2:44"],
+            ["5", "Spiders", "3:35"],
+            ["6", "Ddevil", "1:43"],
+            ["7", "Soil", "3:25"],
+            ["8", "War?", "2:40"],
+            ["9", "Mind", "6:16"],
+            ["10", "Peephole", "4:06"],
+            ["11", "CUBErt", "1:50"],
+            ["12", "Darts", "2:42"],
+            ["13", "P.L.U.C.K (Politically Lying, Unholy, Cowardly Killers)", "3:33"]]
+        },
+      ];
+
+      const container = document.getElementById("albums-container");
+
+      albums.forEach(album => {
+        const card = document.createElement("div");
+        card.classList.add("col-md-4", "class_toogle", 'demo-card');
+
+        card.innerHTML = `
+  <div class="flip-card-inner">
+    <div class="card album-card flip-card-front">
+      <img src="${album.image}" class="card-img-top" alt="${album.title}" />
+      <div class="card-body">
+        <h5 class="card-title">${album.title}</h5>
+        <p class="card-text">${album.artist}</p>
+        <p class="card-text">${album.price}</p>
+        <p class="btn btn-primary more">Детальніше</p>
+      </div>
+    </div>
+    <div class="flip-card-back">
+      <div class="card-body">
+        <div class="tracklist-container">
+          <h2 class="album-title">${album.title}</h2>
+          <ul class="tracklist">
+            ${album.tracklist.map(track => `
+              <li class="track">
+                <span class="track-number">${track[0]}</span>
+                <span class="track-name">${track[1]}</span>
+                <span class="track-duration">${track[2]}</span>
+              </li>
+            `).join('')}
+          </ul>
+          <p class="btn btn-primary order">Оформити замовлення</p>
+          <p class="btn btn-primary cancel">Закрити</p>
+        </div>
+      </div>
+    </div>
+  </div>
+`;
+
+
+        container.appendChild(card);
+      });
+
+      const moreBtns = document.querySelectorAll('.more');
+      const cancelBtns = document.querySelectorAll('.cancel');
+      const cards = document.querySelectorAll('.class_toogle');
+
+      moreBtns.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+          console.log('clicked more', index);
+          cards[index].classList.toggle('flip-card');
+        });
+      });
+
+      cancelBtns.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+          console.log('clicked cancel', index);
+          cards[index].classList.toggle('flip-card');
+        });
+      });
+    });
+
+  </script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
