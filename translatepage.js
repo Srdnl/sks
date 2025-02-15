@@ -11,6 +11,10 @@ let searchlink = document.querySelectorAll('.searchlink')
           'ua': ['600₴','1599₴','1699₴','1199₴'],
           'en': ['29.99$', '29.99$', '59.99$', '59.99$']
      },
+     'priceshop': {
+          'ua': ['699₴','1799₴','1899₴','1499₴'],
+          'en': ['34.99$', '34.99$', '64.99$', '64.99$']
+     },
      'textonpage': {
           'ua': ['Популярні релізи', 'Про Нас'],
           'en': ['Popular releases', 'About Us']
@@ -28,6 +32,7 @@ function langchanger(){
 //     textgame.textContent = langtranslater.textonpage.ua[0]
 //     aboutus.textContent = langtranslater.textonpage.ua[1]
      for (let i = 0; i < langtranslater.price.ua.length; i++){pricesteam[i].innerHTML = langtranslater.price.ua[i];}
+     for (let i = 0; i < langtranslater.priceshop.ua.length; i++){price[i].innerHTML = langtranslater.priceshop.ua[i];}
 //    for (let i = 0; i < langtranslater.forlinks.ua.length; i++){searchlink[i].innerHTML = langtranslater.forlinks.ua[i]}
 
 
@@ -37,6 +42,7 @@ function langchanger(){
 //        textgame.textContent = langtranslater.textonpage.en[0]
 //        aboutus.textContent = langtranslater.textonpage.en[1]
           for (let i = 0; i < langtranslater.price.en.length; i++){pricesteam[i].innerHTML = langtranslater.price.en[i];}
+          for (let i = 0; i < langtranslater.priceshop.en.length; i++){price[i].innerHTML = langtranslater.priceshop.en[i];}
 //        for (let i = 0; i < langtranslater.forlinks.en.length; i++){searchlink[i].innerHTML = langtranslater.forlinks.en[i]}
      }
 }
