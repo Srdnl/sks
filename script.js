@@ -6,7 +6,7 @@ function sitehref() {
 }
 
 function abouthref() {
-     window.open = 'aboutpage.html';
+     window.location.href = 'aboutpage.html';
 }
 
 sitetitle.addEventListener("click", sitehref)
