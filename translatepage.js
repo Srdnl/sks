@@ -5,7 +5,7 @@ let textgame = document.querySelector('.textgame')
 let lang = 'en'
 let searchlink = document.querySelectorAll('.searchlink')
 let inputtext = document.getElementById('searchtext')
-
+let gapmoment = document.querySelector('.links')
 
  let langtranslater = {
      'price': {
@@ -30,17 +30,17 @@ function langchanger(){
      if (lang == 'en') {
      lang = 'ua'
      langtext.src = 'pic-content/united-kingdom.png'
+     gapmoment.style.gap = '15px'
      textgame.textContent = langtranslater.textonpage.ua[0]
      aboutus.textContent = langtranslater.textonpage.ua[1]
      inputtext.placeholder = langtranslater.textonpage.ua[2]
      for (let i = 0; i < langtranslater.price.ua.length; i++){pricesteam[i].innerHTML = langtranslater.price.ua[i];}
      for (let i = 0; i < langtranslater.priceshop.ua.length; i++){price[i].innerHTML = langtranslater.priceshop.ua[i];}
      for (let i = 0; i < langtranslater.forlinks.ua.length; i++){searchlink[i].innerHTML = langtranslater.forlinks.ua[i]}
-
-
 }    else if (lang == 'ua'){
           lang = 'en'
           langtext.src = 'pic-content/ukraine.png'
+          gapmoment.style.gap = '27px'
           textgame.textContent = langtranslater.textonpage.en[0]
           aboutus.textContent = langtranslater.textonpage.en[1]
           inputtext.placeholder = langtranslater.textonpage.en[2]
@@ -50,6 +50,4 @@ function langchanger(){
      }
 }
      
-
-
 langdiv.addEventListener("click", langchanger)

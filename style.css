@@ -8,6 +8,10 @@ body{
      margin: 0%;
 }
 
+:root{
+  --font-family: 'Noto Sans Display';
+}
+
 .nav-bar{
      background-color: #171A21;
      width: 100%;
@@ -23,7 +27,7 @@ body{
 
 .nav-text, .langchangetext, .abtext{
      font-size: 20;
-     font-family: "Inria Sans";
+     font-family: var(--font-family);
      color: #BFBFBF;
 }
 
@@ -55,7 +59,7 @@ body{
 }
 
 .searchlink{
-     font-family: "Inria Sans";
+     font-family: var(--font-family);
      color: #BFBFBF;
      font-size: 20;
      text-decoration: none;
@@ -92,7 +96,7 @@ body {
   font-style: italic;
   font-size: 14;
   padding-left: 10px;
-  font-family: 'Inria Sans';
+  font-family: var(--font-family);
 }
 
 #searchtext::placeholder{
@@ -101,7 +105,7 @@ body {
   border: none;
   font-style: italic;
   font-size: 14;
-  font-family: 'Inria Sans';
+  font-family: var(--font-family);
 }
 
 #searchtext:focus{
@@ -283,7 +287,7 @@ body {
   display: flex;
   justify-content: center;
   color: #FFFFFF;
-  font-family: "Inria Sans";
+  font-family: var(--font-family);
   font-size: 27px;
   margin-top: 13px;
   margin-bottom: 13px;
@@ -301,7 +305,7 @@ body {
 .textgame{
   font-size: 32px;
   color: #FFFFFF;
-  font-family: "Inria Sans";
+  font-family: var(--font-family);
   margin-left: 270px;
 }
 
@@ -313,7 +317,7 @@ body {
 }
 
 .price, .pricesteam{
-  font-family: 'Inria Sans';
+  font-family: var(--font-family);
   font-size: 25px;
   color: #BFBFBF;
   margin-top: 0px;
@@ -333,18 +337,18 @@ footer{
   width: 100%;
   margin-top: 23px;
   color: #898989;
-  font-family: 'Inria Sans';
+  font-family: var(--font-family);
   text-align: center;
 }
 
 .maintext{
   color: #FFFFFF;
   font-size: 18px;
-  font-family: 'Inria Sans';
+  font-family: var(--font-family);
   background-color: #171A21;
   height: 420px;
   width: 1050px;
-  padding: 0px 15px 5px 25px;
+  padding: 0px 15px 15px 25px;
 }
 
 .langchange{
@@ -366,4 +370,8 @@ footer{
   justify-content: center;
   align-items: center;
   height: 85%;
+}
+
+.maintext{
+  min-height: min-content;
 }
