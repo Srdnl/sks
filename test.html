@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Живой поиск</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .search-box { width: 200px; padding: 5px; }
+        .dropdown { border: 1px solid #ccc; display: none; max-height: 150px; overflow-y: auto; }
+        .item { padding: 5px; cursor: pointer; }
+        .item:hover { background: #f0f0f0; }
+    </style>
+</head>
+<body>
+
+    <input type="text" id="search" class="search-box" placeholder="Поиск...">
+    <div id="dropdown" class="dropdown"></div>
+
+    <script>
+        const items = ["Яблоко", "Груша", "Банан", "Апельсин", "Персик", "Мандарин"];
+        const search = document.getElementById("search");
+        const dropdown = document.getElementById("dropdown");
+
+        // Функция для показа списка
+        function showDropdown() {
+            dropdown.style.display = "block";
+            updateList("");
+        }
+
+        // Функция для скрытия списка
+        function hideDropdown() {
+            setTimeout(() => dropdown.style.display = "none", 200);
+        }
+
+        // Функция для обновления списка
+        function updateList(query) {
+            dropdown.innerHTML = ""; // Очищаем список
+            const filtered = items.filter(item => item.toLowerCase().includes(query.toLowerCase()));
+
+            if (filtered.length === 0) {
+                dropdown.innerHTML = "<div class='item'>Ничего не найдено</div>";
+                return;
+            }
+
+            filtered.forEach(item => {
+                const div = document.createElement("div");
+                div.textContent = item;
+                div.classList.add("item");
+                div.onclick = () => {
+                    search.value = item;
+                    dropdown.style.display = "none";
+                };
+                dropdown.appendChild(div);
+            });
+        }
+
+        // События
+        search.addEventListener("focus", showDropdown);
+        search.addEventListener("blur", hideDropdown);
+        search.addEventListener("input", () => updateList(search.value));
+    </script>
+
+</body>
+</html>

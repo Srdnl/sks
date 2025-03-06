@@ -51,8 +51,6 @@ btnsearch.addEventListener("click", getsearch)
 sitetitle.addEventListener("click", sitehref)
 aboutusnav.addEventListener("click", abouthref)
 
-
-
 let games = [
      { title: 'Path of Exile 2', img: 'pic-content/poe2.jpg', pc: '29.99$', price: '34.99$' },
      { title: 'Kingdom Come: Deliverance II', img: 'pic-content/kcd2.jpg', pc: '29.99$', price: '34.99$' },
@@ -60,18 +58,14 @@ let games = [
      { title: 'ELDEN RING NIGHTREIGN(2025)', img: 'pic-content/el.jpg', pc: '59.99$', price: '64.99$'}
  ];
  
-
 function mainpagecards() {
      for (let i = 0; i < games.length; i++) {
           gametitle[i].innerHTML = games[i].title;
           gameimg[i].src = games[i].img;
           pricesteam[i].innerHTML = games[i].pc;
           price[i].innerHTML = games[i].price;
-
      let titlelength = games[i].title.length;
-
      console.log(titlelength)
-
      if (titlelength > 22) {
           gametitle[i].style.fontSize = '22px';
      } if (titlelength > 26) {
@@ -81,7 +75,6 @@ function mainpagecards() {
      } if (titlelength > 32) {
           gametitle[i].style.fontSize = '16px';
      }
-
 }}
 
 mainpagecards()
