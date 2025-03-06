@@ -21,14 +21,30 @@ body{
 .nav-content{
      display: flex;
      padding-left: 18px;
-     gap: 50px;
-     flex-direction: row;
+     justify-content: space-between;
 }
 
-.nav-text, .langchangetext, .abtext{
+.nav-text, .langchangetext, .abtext, .signin{
      font-size: 20;
      font-family: var(--font-family);
      color: #BFBFBF;
+     cursor: pointer;
+}
+
+.start{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.end{
+  display: flex;
+  align-items: center;
+}
+
+.signin{
+  text-decoration: none;
+  padding: 0px 18px;
 }
 
 .mainsearch-bar{
@@ -374,4 +390,42 @@ footer{
 
 .maintext{
   min-height: min-content;
+}
+
+.search-box{ 
+  width: 200px; 
+  padding: 5px; 
+}
+
+.dropdown { 
+  position: absolute;
+  display: none; 
+  max-height: 150px; 
+  overflow-y: auto; 
+  position: absolute; 
+  background: #171a21; 
+  color: #FFFFFF;
+  width: 188px; 
+  font: var(--font-family);
+  top: 171px;
+}
+
+.item { 
+  padding: 5px; 
+  cursor: pointer; 
+}
+
+.item:hover { 
+  background: #171a21; 
+}
+
+.discount{
+  font-family: var(--font-family);
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #4F931B;
+  position: absolute;
+  padding-left: 8px;
+  padding-top: 7px;
 }
