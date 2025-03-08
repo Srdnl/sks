@@ -1,0 +1,303 @@
+.main-site{
+     height: 93vh;
+     width: 100%;
+     background-color: #1B2838;
+}
+
+body{
+     margin: 0%;
+}
+
+:root{
+  --font-family: 'Noto Sans Display';
+}
+
+.nav-bar{
+     background-color: #171A21;
+     width: 100%;
+     height: 68px;
+}
+
+.nav-content{
+     display: flex;
+     padding-left: 18px;
+     justify-content: space-between;
+}
+
+.nav-text, .langchangetext, .abtext, .signin{
+     font-size: 20;
+     font-family: var(--font-family);
+     color: #BFBFBF;
+     cursor: pointer;
+}
+
+.start{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.end{
+  display: flex;
+  align-items: center;
+}
+
+.signin{
+  text-decoration: none;
+  padding: 0px 18px;
+}
+
+.langchange{
+  user-select: none;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #000;
+  overflow: hidden;
+  margin: 0;
+}
+
+footer{
+  display: flex;
+  background-color: #171A21;
+  width: 100%;
+  height: 100;
+}
+
+.endtext{
+  font-size: 17px;
+  width: 100%;
+  margin-top: 23px;
+  color: #898989;
+  font-family: var(--font-family);
+  text-align: center;
+}
+
+.maintext{
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: var(--font-family);
+  background-color: #171A21;
+  height: 800px;
+  width: 1125px;
+  padding: 0px;
+  background: none;
+}
+
+.langchange{
+  display: flex;
+  align-items: center;
+}
+
+.langchangetext{
+  height: 35px;
+  width: 35px
+}
+
+.fullgamepage{
+  display: flex;
+  justify-content: center;
+  height: 800px;
+}
+
+.gamepage{
+  height: 800px;
+  width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameimg{
+  width: 700px;
+  height: 380px;
+}
+
+.imgdiv{
+  width: 700px;
+  height: 400px;
+}
+
+
+.title{
+  font-weight: 450;
+  font-family: var(--font-family);
+  color: #FFFFFF;
+}
+
+.imgstart, .imgend, .arrowleft, .arrowright{
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-color: #2E3441;
+}
+
+.imgscroller{
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  width: 700px;
+  background-color: #171A21;
+}
+
+.imgmid{
+  height: 20px;
+  width: 100px;
+  background-color: #2E3441;
+}
+
+.gameimgtwo{
+  width: 400px;
+}
+
+.gametext{
+  padding: 12px 12px 12px 12px;
+  margin: 0;
+}
+
+.gameinfodiv{
+  width: 400px;
+  height: 665px;
+}
+
+.gameinfodiv{
+  background-color: #171A21;
+  width: 400px;
+  height: 400px;
+}
+
+.categories{
+  background-color: #171A21;
+  margin-top: 32px;
+  width: 400px;
+  height: 237px;
+}
+
+.upstart{
+  display: flex;
+  gap: 25px;
+  width: 1125px;
+  height: 405px;
+}
+
+.buydiv, .buycontent{
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  margin-top: 25px;
+  background-color: #2E3441;
+  height: 100px;
+  width: 700px;
+}
+
+.titlebuy{
+  margin: 0px;
+  padding: 20px 0px 0px 25px;
+  font-weight: 500;
+  width: 550px;
+}
+
+.steamlink{
+  color: #BFBFBF;
+  width: 500px;
+  margin: 0px;
+  padding: 5px 0px 0px 25px;
+}
+
+.linkongame{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.winimg{
+  padding: 20px 15px 0px 0px;
+  float: right;
+  width: 30px;
+}
+
+.price{
+  margin: 0px;
+  color: #BFBFBF;
+}
+
+.buybtndiv{
+  float: right;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 150px;  
+  height: 40px;
+  margin-right: 10px;
+  background-color: #1E1E1E;
+}
+
+.buybtn{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4F931B;
+  width: 75px;
+  height: 30px;
+  border-radius: 2px;
+  color: #8ACB59;
+}
+
+.descgamediv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+  background-color: #171A21;
+  height: 110px;
+}
+
+.namegame, .genre, .developer, .release{
+  font-size: 17px;
+  margin: 0px 0px 0px 10px;
+  color: #898989;
+}
+
+.namegamespan, .genrespan, .devspan{
+  color: #5CB0E1;
+}
+
+.releasespan{
+  color: #BFBFBF;
+}
+
+.userreviews, .topsellers{
+  padding-left: 35px;
+  padding-top: 8px;
+  margin: 0px;
+  color: #BFBFBF;
+}
+
+.positiverev{
+  color:#5CB0E1;
+}
+
+.sysreq{
+  margin: 5px 0px 5px 10px;
+}
+
+.sysreqtext, .os, .processorp, .ram, .graphic, .space{
+  margin: 1px 0px 0px 6px;
+  font-size: 15px;
+  color:#898989;
+}
+
+.prospan, .winspan, .ramspan, .graphicspan, .spacespan{
+  color: #BFBFBF
+}
+
+.sqrgame{
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 20px;
+  position: absolute;
+}

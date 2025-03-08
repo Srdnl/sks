@@ -17,10 +17,9 @@ function getup(){
           window.open = "account.html"
           accountlol()
      } else {alert('Wrong Email!')}
-
-     
-     
 }
+
+
 
 function getCookie(name) {
      let value = "; " + document.cookie;

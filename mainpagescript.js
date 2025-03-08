@@ -103,11 +103,16 @@ function updateList(query) {
     })
 }
 
-function getsearch() {
+let gamegamegame = ''
+
+function getsearch(gamegamegame) {
      let inputvalue = input.value.toLowerCase().trim()
      let foundGame = games.find(game => game.title.toLowerCase().includes(inputvalue))
+     gamegamegame = foundGame
+     console.log(gamegamegame)
      if (foundGame) {
          window.location.href = 'game.html'
+         gamepage()
      } else {
          alert("No")
      }
@@ -117,6 +122,8 @@ function getsearch() {
 input.addEventListener("focus", showDropdown)
 input.addEventListener("blur", hideDropdown)
 input.addEventListener("input", () => updateList(input.value))
+
+
 
 
 
